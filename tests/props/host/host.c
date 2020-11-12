@@ -105,8 +105,7 @@ static oe_result_t _sgx_load_enclave_properties(
         OE_RAISE(OE_FAILURE);
 
     /* Load the SGX enclave properties */
-    if (oe_sgx_load_enclave_properties(
-            &oeimage, OE_INFO_SECTION_NAME, properties) != OE_OK)
+    if (oe_sgx_load_enclave_properties(&oeimage, properties) != OE_OK)
         OE_RAISE(OE_NOT_FOUND);
 
     /* Since XFRM isn't stored in the image, set it here */
