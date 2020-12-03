@@ -1,0 +1,4 @@
+
+
+    ecall - encalve call (untrusted(host) -> trusted(enclave))
+    ocall - outside call (trusted(enclave) -> untrusted(host))
